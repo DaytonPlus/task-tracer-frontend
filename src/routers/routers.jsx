@@ -30,11 +30,6 @@ export default function Routers() {
 		                <Route path={'/project/:id/task'} element={<Breadcrumb element={<ProjectAllTasks/>}/>}/>
 		                <Route path={'/project/:id/task/:task' } element={<Breadcrumb element={<ProjectTask/>}/>}/>
 	                	<Route path={'/profile'} element={<Profile/>}/>
-	                	<Route path={'/logout'} element={
-	                		<h1>LogOut</h1>
-	                	} action={async()=>{
-	                		auth.logout()
-	                	}}/>
                 </Route>
 
             </Routes>
