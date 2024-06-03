@@ -7,6 +7,7 @@ import Breadcrumb from '../components/Breadcrumb'
 
 import Home from '../pages/home'
 import Login from '../pages/login'
+import Register from '../pages/register'
 import Profile from '../pages/profile'
 import AllProjects from '../pages/projects'
 import Project from '../pages/project'
@@ -23,6 +24,7 @@ export default function Routers() {
             <Routes>
                 <Route path={"/*"} element={<Home/>}/>
                 <Route path={'/login' } element={<Login/>}/>
+                <Route path={'/register' } element={<Register/>}/>
 
                 <Route element={<ProtectedRoute redirectTo={'/login'}/>}>
 		                <Route path={'/project' } element={<Breadcrumb element={<AllProjects/>}/>}/>

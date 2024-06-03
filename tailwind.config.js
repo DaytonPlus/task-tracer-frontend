@@ -26,6 +26,9 @@ export default {
 				oswald: ['Oswald',
 					'sans-serif'],
 			},
+			backgroundImage: theme => ({
+        'conference': "url('./public/conference.jpg')",
+      })
 		},
 		experimental: {
 			applyComplexClasses: true,
