@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/task-tracer-frontend/',
+  //base: '/task-tracer-frontend/',
+  server: {
+    port: 8080
+  },
 })
